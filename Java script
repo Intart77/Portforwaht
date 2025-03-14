@@ -1,0 +1,7 @@
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("hidden");
+}
+
+function showProjectDetails(projectId) {
+    document.getElementById(projectId).classList.toggle("hidden");
+}
