@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links" class="hidden">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <section id="home" class="section">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="https://cdn.discordapp.com/attachments/892403852979101786/1350148935544606761/IMG_9774.jpg?ex=67d5afae&is=67d45e2e&hm=b0ddb3d0aac51398279483aa3f544f4707e0617c46ccf6854088c4263d5b6f66&" alt="My Profile Picture" class="profile-img">
+            <p>สวัสดีครับ ผมชื่ออินนะครับ ตอนนี้เป็นนักเรียนโรงเรียนมัธยมวัดสิงห์ครับบ </p>
+        </section>
+        
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>ผมชอบวิศวกรรมโยธา และผมเป็นคนรักคณิตศาสตร์กับฟิสิกส์มากๆครับ ผมสนุกกับการหาทางออกให้ปัญหาที่ยากๆ แต่เป็นคนขี้เกียจ</p>
+            <h3>Skills</h3>
+            <p>I can fall asleep anytime</p>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project" onclick="showProjectDetails('project1-details')">
+                <img src="https://cdn.discordapp.com/attachments/892403852979101786/1350170418547527690/Screenshot_2025-03-15_011413.png?ex=67d5c3b0&is=67d47230&hm=1ed7e785fc5e901195d8a3af0669b22a10b83b9bf8e7b325a722b9adab17707e&" alt="Project 1">
+                <h3>Project 1: Knowtradehub</h3>
+                <p>Click to see more details...</p>
+                <div id="project1-details" class="hidden">
+                    <p>Knowtradehub แพลตฟอร์มแลกเปลี่ยนความรู้ ที่ช่วยให้นักเรียนค้นหาเพื่อนติว ถาม-ตอบปัญหาการเรียน และพัฒนาทักษะไปด้วยกัน</p>
+                    <p>Link-Video: <a href="https://www.youtube.com/watch?v=pKUzrtY0zbQ">Knowtradehub Presentation</a></p>
+                </div>
+            </div>
+            <div class="project" onclick="showProjectDetails('project2-details')">
+                <h3>Project 2: Smart Motorcycle Helmet</h3>
+                <p>Click to see more details...</p>
+                <div id="project2-details" class="hidden">
+                    <p>โปรเจกต์นี้ทำขึ้นเพื่อความปลอดภัยของผู้ขับขี่รถจักรยานยนต์ และโครงงานนี้ทำขึ้นเพื่อเป็นไอเดียเพื่อที่จะพัฒนาต่อยอดต่อไปในอนาคตครับ</p>
+                    <p> <a href="https://www.canva.com/design/DAGQi5NFd9c/5hy3h8kTgZ9hqG-qXUod0Q/edit?utm_content=DAGQi5NFd9c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">อันนี้เป็นlinkเล่มโปรเจกต์นะครับ</a></p>
+                    <p>***อันนี้ผมไม่มีรูปให้นะครับ ผมทำรูปหาย***</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: intatt55@gmail.com</p>
+            <p>Phone: 064-150-9666</p>
+            <p>LinkedIn: <a href="https://www.instagram.com/guu_inn/" target="_blank">My Contact</a></p>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
